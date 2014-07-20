@@ -1,0 +1,9 @@
+<mt:SetVarBlock name="js_include" append="1">
+<script type="text/javascript">
+FastestPreviewBlogOrigin = '<mt:BlogURL encode_js="1" />'
+    .replace(/(\w)\/.*/, function(all, prefix){ return prefix });
+FastestPreviewAdminOrigin = '<mt:AdminCGIPath encode_js="1" />'
+    .replace(/(\w)\/.*/, function(all, prefix){ return prefix });
+</script>
+<script type="text/javascript" src="<mt:Var name="static_uri">plugins/FastestPreview/js/edit_entry.js"></script>
+</mt:SetVarBlock>

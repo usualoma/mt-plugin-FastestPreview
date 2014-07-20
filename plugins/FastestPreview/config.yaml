@@ -1,0 +1,23 @@
+id: FastestPreview
+name: FastestPreview
+version: 0.01
+description: <__trans phrase="This plugin enables the MT to synchronize preview with editing screen.">
+author_name: <__trans phrase="Taku AMANO">
+author_link: http://taaas.jp/
+plugin_link: https://github.com/usualoma/mt-plugin-FastestPreview/
+
+l10n_class: MT::Plugin::FastestPreview::L10N
+
+tags:
+  function:
+    EntryTitle: $FastestPreview::MT::Plugin::FastestPreview::wrap_tag
+    EntryBody: $FastestPreview::MT::Plugin::FastestPreview::wrap_tag
+    EntryMore: $FastestPreview::MT::Plugin::FastestPreview::wrap_tag
+    EntryExcerpt: $FastestPreview::MT::Plugin::FastestPreview::wrap_tag
+    EntryKeywords: $FastestPreview::MT::Plugin::FastestPreview::wrap_tag
+
+applications:
+  cms:
+    callbacks:
+      template_param.edit_entry: $FastestPreview::MT::Plugin::FastestPreview::param_edit_entry
+      init_app: $FastestPreview::MT::Plugin::FastestPreview::init_app
