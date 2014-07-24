@@ -40,7 +40,12 @@ This plugin supports these tags without any modifier.
 * mt:EntryBody
 * mt:EntryMore
 * mt:EntryExcerpt (without auto-generation)
-* mt:Keywords
+* mt:EntryKeywords
+* mt:PageTitle
+* mt:PageBody
+* mt:PageMore
+* mt:PageExcerpt (without auto-generation)
+* mt:PageKeywords
 * Tags added by customfields.
     * Single-Line Text
     * Multi-Line Text

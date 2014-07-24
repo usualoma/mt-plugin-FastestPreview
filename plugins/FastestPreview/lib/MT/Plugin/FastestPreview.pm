@@ -77,7 +77,7 @@ sub wrap_tag {
 
     my $tag = lc $ctx->stash('tag');
     my $field
-        = $field_map{$tag} || do { ( my $s = $tag ) =~ s/^entry//; $s; };
+        = $field_map{$tag} || do { ( my $s = $tag ) =~ s/^(?:entry|page)//; $s; };
     _wrap( $ctx, $field, $content );
 }
 
