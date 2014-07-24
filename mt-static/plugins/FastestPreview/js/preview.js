@@ -6,6 +6,23 @@
     }
     window.FastestPreviewLoaded = true;
 
+    if (
+        typeof window.addEventListener === 'undefined'
+        || typeof window.opener.postMessage === 'undefined'
+    ) {
+        var messages = [
+            'Your environment does not support the FastestPreview\'s feature.'
+        ];
+
+        if (navigator.userAgent.match(/msie/i)) {
+            messages.push('Please confirm compatibility settings when this result is not what you expected.');
+        }
+
+        alert(messages.join('\n'));
+
+        return;
+    }
+
     window.addEventListener('message', function(event) {
         if (! event.data.values.length) {
             return;

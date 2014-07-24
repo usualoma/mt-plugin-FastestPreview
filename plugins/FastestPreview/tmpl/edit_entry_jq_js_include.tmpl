@@ -1,0 +1,8 @@
+<mt:setvarblock name="jq_js_include" append="1">
+if (navigator.userAgent.match(/Trident/)) {
+    jQuery('button.preview').click(function(event) {
+        var target = jQuery('form#entry_form').prop('target');
+        window.open(StaticURI + 'html/blank.html', target);
+    });
+}
+</mt:setvarblock>

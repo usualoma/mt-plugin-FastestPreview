@@ -59,6 +59,13 @@ sub param_edit_entry {
     foreach my $t ( @{ plugin()->load_tmpl('edit_entry.tmpl')->tokens } ) {
         $tmpl->insertBefore( $t, $header );
     }
+
+    my $footer = $tmpl->getElementById('footer_include');
+    foreach my $t (
+        @{ plugin()->load_tmpl('edit_entry_jq_js_include.tmpl')->tokens } )
+    {
+        $tmpl->insertBefore( $t, $footer );
+    }
 }
 
 our %field_map = (
