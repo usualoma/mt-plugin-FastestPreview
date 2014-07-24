@@ -12,7 +12,17 @@
 
 # Artwork data for description
 ^artwork/
+
+# Raw source file
+^src/
+
+# Build tools
+Gruntfile
+package.json
 ^tools/
+
+# npm working directory
+^node_modules/
 
 # packages
 \.zip$
