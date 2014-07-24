@@ -28,7 +28,7 @@
     }
 
     window.addEventListener("message", function(event) {
-        if (! event.data.values.length) {
+        if (! event.data.values || ! event.data.values.length) {
             return;
         }
 

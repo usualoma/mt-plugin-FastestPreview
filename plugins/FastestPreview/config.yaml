@@ -1,6 +1,6 @@
 id: FastestPreview
 name: FastestPreview
-version: 0.02
+version: 0.03
 description: <__trans phrase="This plugin enables the MT to synchronize preview with editing screen.">
 author_name: <__trans phrase="Taku AMANO">
 author_link: http://taaas.jp/
