@@ -18,7 +18,7 @@ sub _wrap {
 
     qq{<script type="text/javascript" src="}
         . $ctx->invoke_handler('StaticWebPath')
-        . qq{plugins/FastestPreview/js/preview.js"></script><span class="fastest-preview-wrapper" data-field="$field" data-origin="$origin">$content</span>};
+        . qq{plugins/FastestPreview/js-bundle/preview.js"></script><span class="fastest-preview-wrapper" data-field="$field" data-origin="$origin">$content</span>};
 }
 
 sub init_app {

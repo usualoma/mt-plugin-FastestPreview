@@ -38,13 +38,15 @@ This plugin supports these tags without any modifier.
 
 * mt:EntryTitle
 * mt:EntryBody
+    * The "markdown" and the "textile" are partly supported.
 * mt:EntryMore
-* mt:EntryExcerpt (without auto-generation)
+* mt:EntryExcerpt
+    * without auto-generation
 * mt:EntryKeywords
 * mt:PageTitle
 * mt:PageBody
 * mt:PageMore
-* mt:PageExcerpt (without auto-generation)
+* mt:PageExcerpt
 * mt:PageKeywords
 * Tags added by customfields.
     * Single-Line Text
@@ -58,6 +60,15 @@ This plugin supports these tags without any modifier.
 
 ## Requirements
 * MT6
+
+
+## External Libraries
+
+Thanks!
+Includes these external libraries in order to convert format.
+
+* https://github.com/evilstreak/markdown-js
+* https://github.com/borgar/textile-js
 
 
 ## LICENSE
