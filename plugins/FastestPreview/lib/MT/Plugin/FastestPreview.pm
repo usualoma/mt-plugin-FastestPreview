@@ -15,10 +15,11 @@ sub _wrap {
 
     my $origin = $ctx->invoke_handler('AdminCGIPath');
     $origin =~ s{(?<=\w)/.*}{};
+    my $version = plugin()->{version};
 
     qq{<script type="text/javascript" src="}
         . $ctx->invoke_handler('StaticWebPath')
-        . qq{plugins/FastestPreview/js-bundle/preview.js"></script><span class="fastest-preview-wrapper" data-field="$field" data-origin="$origin">$content</span>};
+        . qq{plugins/FastestPreview/js-bundle/preview.js?v=$version"></script><span class="fastest-preview-wrapper" data-field="$field" data-origin="$origin">$content</span>};
 }
 
 sub init_app {
